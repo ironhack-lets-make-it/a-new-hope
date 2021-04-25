@@ -10,7 +10,7 @@ export interface Event {
   participants: User[];
   date: Date | number;
   comments: string[];
-  closed: boolean;
+  isClosed: boolean;
   closedDate?: Date;
 }
 

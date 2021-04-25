@@ -3,7 +3,7 @@ import { Event } from "../types/event.type";
 export const allEvents: Event[] = [
   {
     id: "1",
-    closed: false,
+    isClosed: false,
     comments: [],
     date: Date.now(),
     description: "A new hope for the humans",
@@ -15,7 +15,7 @@ export const allEvents: Event[] = [
   },
   {
     id: "2",
-    closed: true,
+    isClosed: true,
     comments: [],
     date: new Date("2020").getTime(),
     description: "Everyone died at the end of this one",

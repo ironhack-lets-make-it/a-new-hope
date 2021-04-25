@@ -2,19 +2,24 @@ import { allEvents } from "mocks/mockEvents";
 import { GetServerSideProps } from "next";
 import * as React from "react";
 import { Event } from "types/event.type";
+import { Link } from "@components/Link";
 
 interface IAdminHomePageProps {
   events: Event[];
 }
 
 function AdminHomePage(props: IAdminHomePageProps) {
-  console.log("props:", props.events[0]);
+  // console.log("props:", props.events[0]);
   const { events } = props;
   // list of events
   return (
     <div>
       {events.map((e) => {
-        return <div key={e.id}>{e.title}</div>;
+        return (
+          <Link key={e.id} href={`/admin/${e.id}`}>
+            {e.title}
+          </Link>
+        );
       })}
     </div>
   );
