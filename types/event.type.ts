@@ -8,7 +8,7 @@ export interface Event {
   stack: string[]; //TODO enumerate or create type of stack
   repo: string[];
   participants: User[];
-  date: Date;
+  date: Date | number;
   comments: string[];
   closed: boolean;
   closedDate?: Date;

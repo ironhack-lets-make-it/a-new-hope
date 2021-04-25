@@ -20,3 +20,6 @@ Admin Page(s)
    - Listing users
    - Check individual user information (Stack, events participated in , etc)
    - Update user information (add comments, add a not welcome anymore flag, etc)
+
+
+/admin
