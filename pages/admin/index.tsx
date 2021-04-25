@@ -9,8 +9,15 @@ interface IAdminHomePageProps {
 
 function AdminHomePage(props: IAdminHomePageProps) {
   console.log("props:", props.events[0]);
+  const { events } = props;
   // list of events
-  return <div>Admin</div>;
+  return (
+    <div>
+      {events.map((e) => {
+        return <div key={e.id}>{e.title}</div>;
+      })}
+    </div>
+  );
 }
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
