@@ -9,7 +9,7 @@ interface IAdminHomePageProps {
 }
 
 function AdminHomePage(props: IAdminHomePageProps) {
-  // console.log("props:", props.events[0]);
+  console.log("props:", props.events[0]);
   const { events } = props;
   // list of events
   return (
