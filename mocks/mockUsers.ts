@@ -32,4 +32,23 @@ export const allUsers: User[] = [
       "Blaze",
     ],
   },
+  {
+    skills: ["Yes"],
+    email: "in-serbia-cycling-is-considered@gay.com",
+    github: "",
+    id: "5",
+    isIronhacker: false,
+    previousWorkshops: ["2"],
+    name: "Paul",
+    staffComment: ["Pusi kurac"],
+    userRecommendations: +Infinity,
+    stack: [
+      "Azure",
+      "AWS",
+      "Vuejs",
+      "Meteor Expert",
+      "Cloud Infrastructure",
+      "Blaze",
+    ],
+  },
 ];
