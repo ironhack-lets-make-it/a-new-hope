@@ -24,3 +24,11 @@ a {
   display: flex;
   flex-direction: column;
 }
+
+.space-btw {
+  justify-content: space-between;
+}
+
+.align-items {
+  align-items: center;
+}

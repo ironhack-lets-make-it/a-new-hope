@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 
 export const AdminMainContainer = styled.div`
+color: #3e3e3e;
     width: 100vw;
     height: 100%;
+font-size: .8rem;
+
     flex: 1;
     // background-color: red;
     padding: .5rem;
@@ -16,18 +19,29 @@ export const AdminMainContainer = styled.div`
 
 
 export const EventContainer = styled.div`
-    background-color: blue;
+    background-color: #ddd;
     margin-bottom: .3rem;
     padding: .7rem;
     border-radius: .3rem;
+    transition: background-color ease .3s;
+    &:hover {
+        background-color: #eee
+    }
+    & > h3 {
+        padding:0;
+        margin:0;
+    }
 `
 
 export const UserItemAvatar = styled.div`
-    background-color: grey;
+    background-color: white;
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
-    // margin-right: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 `
 
 export const UserItemContainer = styled.div`
@@ -36,7 +50,10 @@ margin-bottom: .3rem;
 padding: .7rem;
 border-radius: .3rem;
 align-items: center;
-font-size: .8rem;
+transition: background-color ease .3s;
+    &:hover {
+        background-color: #eee
+    }
 & > div {
     margin-right: .3rem
 }
@@ -48,14 +65,17 @@ export const SkillTag = styled.div`
     padding: .1rem .2rem;
     margin-right: .1rem;
     font-variant: all-petite-caps;
-    // + .python {
-    //     background-color: green;
-    // }
-    //  .react {
-    //     background-color: cyan;
-    // }
+    font-weight: 500;
+    opacity: .7;
+    + .react {
+        background-color: red;
+    }
+    + .python {
+        background-color: green;
+    }
 `
 
 export const IronhackerUserBadge = styled.div`
-    color: blue
+color: #0089ff;
+font-weight: 500;
 `
